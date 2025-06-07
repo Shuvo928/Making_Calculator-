@@ -1,0 +1,23 @@
+<CalculatorLayout>:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    TextInput:
+        id: expression
+        multiline: False
+        font_size: 32
+        size_hint_y: 0.2
+
+    Button:
+        text: "Calculate"
+        
+        font_size: 24
+        size_hint_y: 0.2
+        on_press: root.calculate(expression.text)
+
+    Label:
+        id: result
+        text: "Result"
+        font_size: 32
+        size_hint_y: 0.2
